@@ -60,7 +60,7 @@ class Loader extends PluginBase implements Listener {
         $event->setJoinMessage("§l§7[§a+§7] {$playerName} has joined the game!");
         $player->sendTitle("§l§aWelcome!");
         $player->sendSubtitle("Enjoy your stay {$playerName}");
-        $world->addParticle($particle, $position);
+        $world->addParticle($position, $particle);
         $this->playSound($player, "random.explode");
     }
 
